@@ -72,7 +72,7 @@ int main()
     {
         cin>>arr[i];
     }
-    // array before sorting
+    
     cout<<"array before sorting : ";
     for(int i=0;i<n;i++)
     {
@@ -80,7 +80,7 @@ int main()
     }
     cout<<endl;
     mergesort(arr,0,n-1);
-    // array after sorting
+    
     cout<<"array after sorting : ";
       for(int i=0;i<n;i++)
     {

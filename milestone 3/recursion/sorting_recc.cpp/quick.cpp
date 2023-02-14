@@ -75,7 +75,7 @@ main ()
   cout << endl;
   quicksort (arr, 0, n - 1);
   // array after sorting
-  cout << "array after sorting : ";
+  cout << "array after sorting  : ";
   for (int i = 0; i < n; i++)
     {
       cout << arr[i] << " ";

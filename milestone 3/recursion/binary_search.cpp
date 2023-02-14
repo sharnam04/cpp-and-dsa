@@ -23,23 +23,29 @@ bool binarysearch(int arr[],int x,int s,int e)
 }
 int main()
 {
-    int n;
+     int n;
+    cout<<"the size of array is : ";
     cin>>n;
 
-    int * arr=new int[n];
+    int *arr=new int[n];
     for(int i=0;i<n;i++)
     {
         cin>>arr[i];
     }
-    int x;
-    cin>>x;
+    cout<<endl;
 
+    int x;
+    cout<<"the element to be searched : ";
+    cin>>x;
+    
     bool ans=binarysearch(arr,x,0,n-1);
-    if(ans)
-    {
-        cout<<"present";
+    if(ans){
+        cout<<"the element is present in array"<<endl;
     }
     else{
-        cout<<"absent";
+        cout<<"the element is not present in array"<<endl;
     }
+    
+    delete [] arr;
+    return 0;
 }
